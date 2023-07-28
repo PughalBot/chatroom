@@ -107,10 +107,10 @@ const ChatRoom: React.FC = () => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-white flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <div className="w-full min-h-screen bg-red-200 flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1080px] w-full space-y-6">
         <h1 className="md:text-7xl sm:text-3xl xs:text-lg mt-4 font-pp font-bold text-center mb-6">Chat Room</h1>
-        <div className="rounded-lg bg-none border-2 border-black shadow-lg p-4 ">
+        <div className="rounded-lg bg-white bg-opacity-75 border-2 border-black shadow-lg p-4 ">
           <div className="overflow-y-auto max-h-80">
             {messages ? (
               messages.map((msg, index) => (
@@ -141,7 +141,7 @@ const ChatRoom: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col space-y-2">
-          <label htmlFor="name" className="font-semibold text-gray-700">
+          <label htmlFor="name" className="font-semibold text-black">
             Your Name
           </label>
           <input
@@ -152,7 +152,7 @@ const ChatRoom: React.FC = () => {
             onChange={handleNameChange}
             className="flex-1 w-64 rounded-lg py-2 px-4 bg-white text-gray-700 focus:outline-black"
           />
-          <label htmlFor="message" className="font-semibold text-gray-700">
+          <label htmlFor="message" className="font-semibold text-black">
             Message
           </label>
           <input
